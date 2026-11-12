@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'tailwindcss';
+@import 'flowbite/src/themes/mono';
+
+@plugin 'flowbite/plugin';
+@source '../node_modules/flowbite';
+
+@theme {
+  --font-sans: Figtree, ui-sans-serif, system-ui, sans-serif;
+  --font-body: Figtree, ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-softer: var(--color-orange-50);
+  --color-brand-soft: var(--color-orange-100);
+  --color-brand-subtle: var(--color-orange-200);
+  --color-brand-medium: var(--color-orange-200);
+  --color-brand: var(--color-orange-500);
+  --color-brand-light: var(--color-orange-600);
+  --color-brand-strong: var(--color-orange-700);
+
+  --color-fg-brand-subtle: var(--color-orange-200);
+  --color-fg-brand: var(--color-orange-500);
+  --color-fg-brand-strong: var(--color-orange-700);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
